@@ -26,8 +26,6 @@ jobs:
           java-version: '17'
       - name: Run offline proxy tests
         run: bash tests/offline/run.sh
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
       - name: Install Android platform
         run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
       - name: Set up Gradle
